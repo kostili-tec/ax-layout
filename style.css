@@ -49,6 +49,7 @@ a {
 .header-list__link {
   color: #000;
   font-size: 1.3rem;
+  word-break: keep-all;
 }
 
 .header-list__link:hover {
@@ -66,10 +67,14 @@ a {
   gap: 1rem;
   font-family: "Raleway", sans-serif;
   margin-bottom: 3rem;
+  justify-content: center;
+  align-content: center;
+  position: relative;
 }
 
 .project-item {
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   text-align: left;
   aspect-ratio: 16 / 9;
   grid-column: span 1;
@@ -168,6 +173,8 @@ a {
 .footer-contacts {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-contacts a {
@@ -190,7 +197,23 @@ a {
   }
 }
 
+@media screen and (max-width: 890px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-list__link {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 660px) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .main-projects {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -198,5 +221,18 @@ a {
   .project-item:nth-of-type(7) {
     grid-column: span 1;
     aspect-ratio: 16 / 9;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
