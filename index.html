@@ -14,22 +14,27 @@
 
       <nav class="header-menu">
         <ul class="header-list">
-          <li class="header-list__item"><a class="header-list__link"
-              href="/">Главная</a></li>
-          <li class="header-list__item"><a class="header-list__link" href="#">О
-              компании</a></li>
-          <li class="header-list__item"><a class="header-list__link"
-              href="#">Проекты</a></li>
-          <li class="header-list__item"><a class="header-list__link"
-              href="#">Услуги</a></li>
-          <li class="header-list__item"><a class="header-list__link"
-              href="#">Контакты</a></li>
+          <li class="header-list__item">
+            <a class="header-list__link" href="/">Главная</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link" href="#">О компании</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link" href="#">Проекты</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link" href="#">Услуги</a>
+          </li>
+          <li class="header-list__item">
+            <a class="header-list__link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <h1 class="main-title">Проекты нашей компании</h1>
-      <a class="main-projects">
+      <div class="main-projects">
         <a href="#" class="project-item">
           <h3>Название проекта</h3>
         </a>
@@ -49,9 +54,38 @@
           <h3>Наименование проекта</h3>
         </a>
         <a href="#" class="project-item">
-          <h3>Короткое большое название</h3>
+          <h2>Короткое большое название</h2>
         </a>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer-social">
+        <a href="#">
+          <svg class="svg-icon" id="tg-icon">
+            <use xlink:href="./assets/icons/sprite.svg#telegram_icon"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="svg-icon" id="whatsapp-icon">
+            <use xlink:href="./assets/icons/sprite.svg#whatsapp_icon"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="svg-icon" id="vk-icon">
+            <use xlink:href="./assets/icons/sprite.svg#vk_icon"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="svg-icon" id="youtube-icon">
+            <use xlink:href="./assets/icons/sprite.svg#youtube_icon"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-contacts">
+        <a href="mailto:info@company.com">info@company.com</a>
+        <a href="tel:+74951234567">+7 495 123-45-67</a>
+      </div>
+      <div class="footer-copyright">2022 © ООО «Компания»</div>
+    </footer>
   </body>
 </html>
